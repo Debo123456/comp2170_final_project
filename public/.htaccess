@@ -1,0 +1,11 @@
+Options -MultiViews
+RewriteEngine On
+
+RewriteBase  /mvc_example2/public/
+
+RewriteCond ${REQUEST_FILENAME} !-d
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_URI} !^.*\.(css|jpe?g|gif|png|js|ico)$ [NC]
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

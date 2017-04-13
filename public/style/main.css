@@ -1,0 +1,26 @@
+.login-container {
+	width: 100vw;
+	height: 100vh;
+  background-color: #ac7766;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border:.5px solid #fff;
+  padding: 5px;
+}
+.login h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+.login p {
+  margin: 0;
+  font-size: 1.5rem;
+}
